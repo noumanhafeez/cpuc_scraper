@@ -13,17 +13,17 @@ class CpucPipeline:
         adapter = ItemAdapter(item)
 
         # Process ALJ and Commissioner fields specifically
-        alj_text = adapter.get('ALJ')
+        alj_text = adapter.get('alj')
         if alj_text:
-            adapter['ALJ'] = alj_text.split(':')[-1].strip()
+            adapter['alj'] = alj_text.split(':')[-1].strip()
         else:
-            adapter['ALJ'] = 'N/A'
+            adapter['alj'] = 'N/A'
 
-        com_text = adapter.get('Commissioner')
+        com_text = adapter.get('commissioner')
         if com_text:
-            adapter['Commissioner'] = com_text.split(':')[-1].strip()
+            adapter['commissioner'] = com_text.split(':')[-1].strip()
         else:
-            adapter['Commissioner'] = 'N/A'
+            adapter['commissioner'] = 'N/A'
 
         doc_colon = adapter.get('doc_type')
         if doc_colon:

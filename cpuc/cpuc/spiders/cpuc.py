@@ -80,7 +80,7 @@ class CPUCSpider(scrapy.Spider):
         item = CpucItem()
         item['filed_by'] = response.xpath('//span[@id="P56_FILED_BY"]/text()').get()
         item['industry'] = response.xpath('//span[@id="P56_INDUSTRY"]/text()').get()
-        item['filing_date'] = response.xpath('//span[@id="P56_FILING_DATE"]/text()').get()
+        item['filling_date'] = response.xpath('//span[@id="P56_FILING_DATE"]/text()').get()
         item['category'] = response.xpath('//span[@id="P56_CATEGORY"]/text()').get()
         item['status'] = response.xpath('//span[@id="P56_STATUS"]/text()').get()
         item['description'] = response.xpath('//span[@id="P56_DESCRIPTION"]/text()').get()
