@@ -7,7 +7,7 @@ import scrapy
 
 
 class CpucItem(scrapy.Item):
-    # define the fields for your item here like:
+   
     # define the fields for your item here like:
     title = scrapy.Field()
     doc_type = scrapy.Field()

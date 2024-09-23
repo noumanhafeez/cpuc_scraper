@@ -90,6 +90,5 @@ class CPUCSpider(scrapy.Spider):
         item['doc_link'] = response.meta.get('doc_link')
         item['title'] = response.meta.get('title')
 
-
         # Yield the extracted data
         yield item
