@@ -30,5 +30,6 @@ class CpucPipeline:
             adapter['doc_type'] = doc_colon.split(':')[-1].strip()
         else:
             adapter['doc_type'] = 'N/A'
+
         
         return item
